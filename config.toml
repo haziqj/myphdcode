@@ -1,0 +1,38 @@
+baseURL = "/"
+languageCode = "en-gb"
+
+title = "My PhD Code"
+theme = "kraiklyn"
+
+pygmentsCodeFences = true
+pygmentsStyle = "monokailight"
+
+[params]
+externalTitle = "Links"
+sidebarColor = "default"
+customCss = []
+
+[[menu.shortcuts]]
+name = "My PhD website"
+url = "http://phd.haziqj.ml"
+weight = 10
+
+[[menu.shortcuts]]
+name = "My website"
+url = "https://haziqj.ml"
+weight = 11
+
+[[menu.shortcuts]]
+name = "R/iprior"
+url = "https://github.com/haziqj/iprior"
+weight = 12
+
+[[menu.shortcuts]]
+name = "R/iprobit"
+url = "https://github.com/haziqj/iprobit"
+weight = 12
+
+[[menu.shortcuts]]
+name = "R/ipriorBVS"
+url = "https://github.com/haziqj/ipriorBVS"
+weight = 12
