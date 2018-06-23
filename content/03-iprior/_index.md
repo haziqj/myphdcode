@@ -5,3 +5,4 @@ anchor: "chapter4"
 weight: 60
 ---
 
+Chapter 4 uses the `iprior` package to fit I-prior models either using direct optimisation, EM algorithm or a combination of both. We also used `rstan` to fit a fully Bayesian I-prior model using HMC.
