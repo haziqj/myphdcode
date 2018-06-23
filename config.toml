@@ -13,6 +13,11 @@ sidebarColor = "default"
 customCss = []
 
 [[menu.shortcuts]]
+name = "Data"
+url = "https://www.dropbox.com/sh/pkn7b4xxseytok3/AAAcrs8hd5DnvS8YLl_101uBa?dl=0"
+weight = 9
+
+[[menu.shortcuts]]
 name = "My PhD website"
 url = "http://phd.haziqj.ml"
 weight = 10
@@ -36,3 +41,5 @@ weight = 12
 name = "R/ipriorBVS"
 url = "https://github.com/haziqj/ipriorBVS"
 weight = 12
+
+

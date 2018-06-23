@@ -15,7 +15,7 @@ pacman::p_load(knitr, devtools, R2MLwiN, lme4, lmerTest, jmcm, caret, tidyverse,
 	           directlabels, reshape2, kableExtra, cowplot, ElemStatLearn, 
 	           spatstat, stringr, caret, kernlab, ggmcmc, coda, mvtnorm, 
 	           MCMCglmm, runjags, rstan, plotly, parallel, doSNOW, RPEnsemble,
-	           foreach, glmnet, BAS)
+	           foreach, glmnet, BAS, ggmap, ggrepel)
 
 # I-prior packages, install from GitHub
 devtools::install_github("haziqj/iprior")

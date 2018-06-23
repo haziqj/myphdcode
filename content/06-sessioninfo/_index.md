@@ -1,5 +1,5 @@
 ---
-title: "Session info"
+title: "Session information"
 date: 2018-01-28T21:48:57+01:00
 anchor: "sessioninfo"
 weight: 90
@@ -8,64 +8,183 @@ weight: 90
 My session information.
 
 ```R
-> sessionInfo()
-R version 3.5.0 (2018-04-23)
-Platform: x86_64-apple-darwin15.6.0 (64-bit)
-Running under: macOS High Sierra 10.13.5
+> devtools::session_info()
+Session info --------------------------------------------------------------------------------
+ setting  value                       
+ version  R version 3.5.0 (2018-04-23)
+ system   x86_64, darwin15.6.0        
+ ui       RStudio (1.1.447)           
+ language (EN)                        
+ collate  en_GB.UTF-8                 
+ tz       Europe/London               
+ date     2018-06-23                  
 
-Matrix products: default
-BLAS: /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libBLAS.dylib
-LAPACK: /Library/Frameworks/R.framework/Versions/3.5/Resources/lib/libRlapack.dylib
-
-locale:
-[1] en_GB.UTF-8/en_GB.UTF-8/en_GB.UTF-8/C/en_GB.UTF-8/en_GB.UTF-8
-
-attached base packages:
-[1] parallel  stats4    stats     graphics  grDevices utils     datasets  methods   base     
-
-other attached packages:
- [1] ipriorBVS_0.1.1         iprobit_0.1.0.9004      BAS_1.5.0              
- [4] glmnet_2.0-16           RPEnsemble_0.4          doSNOW_1.0.16          
- [7] snow_0.4-2              iterators_1.0.9         foreach_1.4.4          
-[10] plotly_4.7.1            rstan_2.17.3            StanHeaders_2.17.2     
-[13] runjags_2.0.4-2         MCMCglmm_2.25           ape_5.1                
-[16] mvtnorm_1.0-7           ggmcmc_1.1              kernlab_0.9-26         
-[19] spatstat_1.55-1         rpart_4.1-13            nlme_3.1-137           
-[22] spatstat.data_1.2-0     ElemStatLearn_2015.6.26 cowplot_0.9.2          
-[25] kableExtra_0.8.0        reshape2_1.4.3          directlabels_2017.03.31
-[28] forcats_0.3.0           stringr_1.3.0           dplyr_0.7.5            
-[31] purrr_0.2.4             readr_1.1.1             tidyr_0.8.0            
-[34] tibble_1.4.2            tidyverse_1.2.1         caret_6.0-79           
-[37] jmcm_0.1.8.0            lmerTest_3.0-1          lme4_1.1-17            
-[40] Matrix_1.2-14           R2MLwiN_0.8-5           coda_0.19-1            
-[43] memisc_0.99.14.9        MASS_7.3-50             lattice_0.20-35        
-[46] devtools_1.13.5         knitr_1.20              pacman_0.4.6           
-[49] iprior_0.7.1.9002       ggplot2_2.2.1          
-
-loaded via a namespace (and not attached):
- [1] readxl_1.1.0         backports_1.1.2      plyr_1.8.4           repr_0.13           
- [5] lazyeval_0.2.1       splines_3.5.0        inline_0.3.14        digest_0.6.15       
- [9] htmltools_0.3.6      magrittr_1.5         memoise_1.1.0        pushoverr_1.0.0     
-[13] tensor_1.5           doParallel_1.0.11    sfsmisc_1.1-2        recipes_0.1.2       
-[17] modelr_0.1.1         gower_0.1.2          dimRed_0.1.0         colorspace_1.3-2    
-[21] rvest_0.3.2          haven_1.1.1          crayon_1.3.4         jsonlite_1.5        
-[25] bindr_0.1.1          survival_2.42-3      glue_1.2.0           DRR_0.0.3           
-[29] polyclip_1.6-1       gtable_0.2.0         ipred_0.9-6          ddalpha_1.3.3       
-[33] DEoptimR_1.0-8       abind_1.4-5          scales_0.5.0         GGally_1.3.2        
-[37] Rcpp_0.12.17         viridisLite_0.3.0    magic_1.5-8          foreign_0.8-70      
-[41] lava_1.6.1           prodlim_2018.04.18   htmlwidgets_1.2      httr_1.3.1          
-[45] RColorBrewer_1.1-2   pkgconfig_2.0.1      reshape_0.8.7        nnet_7.3-12         
-[49] deldir_0.1-15        tidyselect_0.2.4     labeling_0.3         rlang_0.2.1         
-[53] munsell_0.4.3        cellranger_1.1.0     tools_3.5.0          cli_1.0.0           
-[57] broom_0.4.4          evaluate_0.10.1      geometry_0.3-6       yaml_2.1.19         
-[61] goftest_1.1-1        ModelMetrics_1.1.0   robustbase_0.93-0    bindrcpp_0.2.2      
-[65] RcppRoll_0.2.2       xml2_1.2.0           compiler_3.5.0       rstudioapi_0.7      
-[69] spatstat.utils_1.8-0 stringi_1.2.2        cubature_1.3-11      texreg_1.36.23      
-[73] psych_1.8.3.3        nloptr_1.0.4         tensorA_0.36         pillar_1.2.2        
-[77] data.table_1.11.0    corpcor_1.6.9        R6_2.2.2             gridExtra_2.3       
-[81] rjags_4-6            codetools_0.2-15     assertthat_0.2.0     CVST_0.2-1          
-[85] rprojroot_1.3-2      withr_2.1.2          mnormt_1.5-5         mgcv_1.8-23         
-[89] hms_0.4.2            quadprog_1.5-5       grid_3.5.0           timeDate_3043.102   
-[93] class_7.3-14         minqa_1.2.4          rbugs_0.5-9          rmarkdown_1.9       
-[97] numDeriv_2016.8-1    lubridate_1.7.4      base64enc_0.1-3     
+Packages ------------------------------------------------------------------------------------
+ package        * version    date       source                        
+ abind            1.4-5      2016-07-21 CRAN (R 3.5.0)                
+ ape            * 5.1        2018-04-04 CRAN (R 3.5.0)                
+ assertthat       0.2.0      2017-04-11 CRAN (R 3.5.0)                
+ backports        1.1.2      2017-12-13 CRAN (R 3.5.0)                
+ BAS            * 1.5.0      2018-05-03 CRAN (R 3.5.0)                
+ base           * 3.5.0      2018-04-24 local                         
+ base64enc        0.1-3      2015-07-28 CRAN (R 3.5.0)                
+ bindr            0.1.1      2018-03-13 CRAN (R 3.5.0)                
+ bindrcpp         0.2.2      2018-03-29 CRAN (R 3.5.0)                
+ bitops           1.0-6      2013-08-17 CRAN (R 3.5.0)                
+ broom            0.4.4      2018-03-29 CRAN (R 3.5.0)                
+ caret          * 6.0-79     2018-03-29 CRAN (R 3.5.0)                
+ cellranger       1.1.0      2016-07-27 CRAN (R 3.5.0)                
+ class            7.3-14     2015-08-30 CRAN (R 3.5.0)                
+ cli              1.0.0      2017-11-05 CRAN (R 3.5.0)                
+ coda           * 0.19-1     2016-12-08 CRAN (R 3.5.0)                
+ codetools        0.2-15     2016-10-05 CRAN (R 3.5.0)                
+ colorspace       1.3-2      2016-12-14 CRAN (R 3.5.0)                
+ compiler         3.5.0      2018-04-24 local                         
+ corpcor          1.6.9      2017-04-01 CRAN (R 3.5.0)                
+ cowplot        * 0.9.2      2017-12-17 CRAN (R 3.5.0)                
+ crayon           1.3.4      2017-09-16 CRAN (R 3.5.0)                
+ cubature         1.3-11     2017-07-19 CRAN (R 3.5.0)                
+ CVST             0.2-1      2013-12-10 CRAN (R 3.5.0)                
+ data.table       1.11.0     2018-05-01 CRAN (R 3.5.0)                
+ datasets       * 3.5.0      2018-04-24 local                         
+ ddalpha          1.3.3      2018-04-30 CRAN (R 3.5.0)                
+ deldir           0.1-15     2018-04-01 CRAN (R 3.5.0)                
+ DEoptimR         1.0-8      2016-11-19 CRAN (R 3.5.0)                
+ devtools       * 1.13.5     2018-02-18 CRAN (R 3.5.0)                
+ digest           0.6.15     2018-01-28 CRAN (R 3.5.0)                
+ dimRed           0.1.0      2017-05-04 CRAN (R 3.5.0)                
+ directlabels   * 2017.03.31 2017-04-08 cran (@2017.03)               
+ doParallel       1.0.11     2017-09-28 CRAN (R 3.5.0)                
+ doSNOW         * 1.0.16     2017-12-13 cran (@1.0.16)                
+ dplyr          * 0.7.5      2018-05-19 cran (@0.7.5)                 
+ DRR              0.0.3      2018-01-06 CRAN (R 3.5.0)                
+ ElemStatLearn  * 2015.6.26  2015-06-27 CRAN (R 3.5.0)                
+ evaluate         0.10.1     2017-06-24 CRAN (R 3.5.0)                
+ forcats        * 0.3.0      2018-02-19 CRAN (R 3.5.0)                
+ foreach        * 1.4.4      2017-12-12 cran (@1.4.4)                 
+ foreign          0.8-70     2017-11-28 CRAN (R 3.5.0)                
+ geometry         0.3-6      2015-09-09 CRAN (R 3.5.0)                
+ GGally           1.3.2      2017-08-02 CRAN (R 3.5.0)                
+ ggmap          * 2.7.900    2018-06-08 Github (dkahle/ggmap@1c2fb46) 
+ ggmcmc         * 1.1        2016-06-28 CRAN (R 3.5.0)                
+ ggplot2        * 2.2.1      2016-12-30 CRAN (R 3.5.0)                
+ ggrepel        * 0.7.0      2017-09-29 cran (@0.7.0)                 
+ glmnet         * 2.0-16     2018-04-02 CRAN (R 3.5.0)                
+ glue             1.2.0      2017-10-29 CRAN (R 3.5.0)                
+ goftest          1.1-1      2017-04-03 CRAN (R 3.5.0)                
+ gower            0.1.2      2017-02-23 CRAN (R 3.5.0)                
+ graphics       * 3.5.0      2018-04-24 local                         
+ grDevices      * 3.5.0      2018-04-24 local                         
+ grid             3.5.0      2018-04-24 local                         
+ gridExtra        2.3        2017-09-09 CRAN (R 3.5.0)                
+ gtable           0.2.0      2016-02-26 CRAN (R 3.5.0)                
+ haven            1.1.1      2018-01-18 CRAN (R 3.5.0)                
+ highr            0.6        2016-05-09 CRAN (R 3.5.0)                
+ hms              0.4.2      2018-03-10 CRAN (R 3.5.0)                
+ htmltools        0.3.6      2017-04-28 CRAN (R 3.5.0)                
+ htmlwidgets      1.2        2018-04-19 CRAN (R 3.5.0)                
+ httr             1.3.1      2017-08-20 CRAN (R 3.5.0)                
+ inline           0.3.14     2015-04-13 CRAN (R 3.5.0)                
+ ipred            0.9-6      2017-03-01 CRAN (R 3.5.0)                
+ iprior         * 0.7.1.9002 2018-05-19 Github (haziqj/iprior@8992d08)
+ ipriorBVS      * 0.1.1      2018-06-06 local                         
+ iprobit        * 0.1.0.9004 2018-05-22 local                         
+ iterators      * 1.0.9      2017-12-12 cran (@1.0.9)                 
+ jmcm           * 0.1.8.0    2017-11-25 CRAN (R 3.5.0)                
+ jpeg             0.1-8      2014-01-23 CRAN (R 3.5.0)                
+ jsonlite         1.5        2017-06-01 CRAN (R 3.5.0)                
+ kableExtra     * 0.8.0      2018-04-05 CRAN (R 3.5.0)                
+ kernlab        * 0.9-26     2018-04-30 CRAN (R 3.5.0)                
+ knitr          * 1.20       2018-02-20 CRAN (R 3.5.0)                
+ labeling         0.3        2014-08-23 CRAN (R 3.5.0)                
+ lattice        * 0.20-35    2017-03-25 CRAN (R 3.5.0)                
+ lava             1.6.1      2018-03-28 CRAN (R 3.5.0)                
+ lazyeval         0.2.1      2017-10-29 CRAN (R 3.5.0)                
+ lme4           * 1.1-17     2018-04-03 CRAN (R 3.5.0)                
+ lmerTest       * 3.0-1      2018-04-23 CRAN (R 3.5.0)                
+ lubridate        1.7.4      2018-04-11 CRAN (R 3.5.0)                
+ magic            1.5-8      2018-01-26 CRAN (R 3.5.0)                
+ magrittr         1.5        2014-11-22 CRAN (R 3.5.0)                
+ MASS           * 7.3-50     2018-04-30 CRAN (R 3.5.0)                
+ Matrix         * 1.2-14     2018-04-13 CRAN (R 3.5.0)                
+ MCMCglmm       * 2.25       2017-10-05 CRAN (R 3.5.0)                
+ memisc         * 0.99.14.9  2017-12-20 CRAN (R 3.5.0)                
+ memoise          1.1.0      2017-04-21 CRAN (R 3.5.0)                
+ methods        * 3.5.0      2018-04-24 local                         
+ mgcv             1.8-23     2018-01-21 CRAN (R 3.5.0)                
+ minqa            1.2.4      2014-10-09 CRAN (R 3.5.0)                
+ mnormt           1.5-5      2016-10-15 CRAN (R 3.5.0)                
+ ModelMetrics     1.1.0      2016-08-26 CRAN (R 3.5.0)                
+ modelr           0.1.1      2017-07-24 CRAN (R 3.5.0)                
+ munsell          0.4.3      2016-02-13 CRAN (R 3.5.0)                
+ mvtnorm        * 1.0-7      2018-01-26 cran (@1.0-7)                 
+ nlme           * 3.1-137    2018-04-07 CRAN (R 3.5.0)                
+ nloptr           1.0.4      2017-08-22 CRAN (R 3.5.0)                
+ nnet             7.3-12     2016-02-02 CRAN (R 3.5.0)                
+ numDeriv         2016.8-1   2016-08-27 CRAN (R 3.5.0)                
+ pacman         * 0.4.6      2017-05-14 CRAN (R 3.5.0)                
+ parallel       * 3.5.0      2018-04-24 local                         
+ pillar           1.2.2      2018-04-26 CRAN (R 3.5.0)                
+ pkgconfig        2.0.1      2017-03-21 CRAN (R 3.5.0)                
+ plotly         * 4.7.1      2017-07-29 CRAN (R 3.5.0)                
+ plyr             1.8.4      2016-06-08 CRAN (R 3.5.0)                
+ png              0.1-7      2013-12-03 CRAN (R 3.5.0)                
+ polyclip         1.6-1      2017-03-22 CRAN (R 3.5.0)                
+ prodlim          2018.04.18 2018-04-18 CRAN (R 3.5.0)                
+ psych            1.8.3.3    2018-03-30 CRAN (R 3.5.0)                
+ purrr          * 0.2.4      2017-10-18 CRAN (R 3.5.0)                
+ pushoverr        1.0.0      2016-11-23 CRAN (R 3.5.0)                
+ quadprog         1.5-5      2013-04-17 cran (@1.5-5)                 
+ R2MLwiN        * 0.8-5      2017-09-01 CRAN (R 3.5.0)                
+ R6               2.2.2      2017-06-17 CRAN (R 3.5.0)                
+ rbugs            0.5-9      2013-04-09 CRAN (R 3.5.0)                
+ RColorBrewer     1.1-2      2014-12-07 CRAN (R 3.5.0)                
+ Rcpp             0.12.17    2018-05-18 cran (@0.12.17)               
+ RcppRoll         0.2.2      2015-04-05 CRAN (R 3.5.0)                
+ readr          * 1.1.1      2017-05-16 CRAN (R 3.5.0)                
+ readxl           1.1.0      2018-04-20 CRAN (R 3.5.0)                
+ recipes          0.1.2      2018-01-11 CRAN (R 3.5.0)                
+ repr             0.13       2018-04-14 CRAN (R 3.5.0)                
+ reshape          0.8.7      2017-08-06 CRAN (R 3.5.0)                
+ reshape2       * 1.4.3      2017-12-11 CRAN (R 3.5.0)                
+ RgoogleMaps      1.4.2      2018-06-08 CRAN (R 3.5.0)                
+ rjags            4-6        2016-02-19 CRAN (R 3.5.0)                
+ rjson            0.2.20     2018-06-08 CRAN (R 3.5.0)                
+ rlang            0.2.1      2018-05-30 cran (@0.2.1)                 
+ rmarkdown        1.9        2018-03-01 CRAN (R 3.5.0)                
+ robustbase       0.93-0     2018-04-24 CRAN (R 3.5.0)                
+ rpart          * 4.1-13     2018-02-23 CRAN (R 3.5.0)                
+ RPEnsemble     * 0.4        2017-10-07 CRAN (R 3.5.0)                
+ rprojroot        1.3-2      2018-01-03 CRAN (R 3.5.0)                
+ rstan          * 2.17.3     2018-01-20 CRAN (R 3.5.0)                
+ rstudioapi       0.7        2017-09-07 CRAN (R 3.5.0)                
+ runjags        * 2.0.4-2    2016-07-25 CRAN (R 3.5.0)                
+ rvest            0.3.2      2016-06-17 CRAN (R 3.5.0)                
+ scales           0.5.0      2017-08-24 CRAN (R 3.5.0)                
+ sfsmisc          1.1-2      2018-03-05 CRAN (R 3.5.0)                
+ snow           * 0.4-2      2016-10-14 cran (@0.4-2)                 
+ spatstat       * 1.55-1     2018-04-05 CRAN (R 3.5.0)                
+ spatstat.data  * 1.2-0      2017-11-20 CRAN (R 3.5.0)                
+ spatstat.utils   1.8-0      2017-11-20 CRAN (R 3.5.0)                
+ splines          3.5.0      2018-04-24 local                         
+ StanHeaders    * 2.17.2     2018-01-20 CRAN (R 3.5.0)                
+ stats          * 3.5.0      2018-04-24 local                         
+ stats4         * 3.5.0      2018-04-24 local                         
+ stringi          1.2.2      2018-05-02 CRAN (R 3.5.0)                
+ stringr        * 1.3.0      2018-02-19 CRAN (R 3.5.0)                
+ survival         2.42-3     2018-04-16 CRAN (R 3.5.0)                
+ tensor           1.5        2012-05-05 CRAN (R 3.5.0)                
+ tensorA          0.36       2010-12-01 CRAN (R 3.5.0)                
+ texreg           1.36.23    2017-03-03 CRAN (R 3.5.0)                
+ tibble         * 1.4.2      2018-01-22 CRAN (R 3.5.0)                
+ tidyr          * 0.8.0      2018-01-29 CRAN (R 3.5.0)                
+ tidyselect       0.2.4      2018-02-26 CRAN (R 3.5.0)                
+ tidyverse      * 1.2.1      2017-11-14 CRAN (R 3.5.0)                
+ timeDate         3043.102   2018-02-21 CRAN (R 3.5.0)                
+ tools            3.5.0      2018-04-24 local                         
+ utils          * 3.5.0      2018-04-24 local                         
+ viridisLite      0.3.0      2018-02-01 CRAN (R 3.5.0)                
+ withr            2.1.2      2018-03-15 CRAN (R 3.5.0)                
+ xml2             1.2.0      2018-01-24 CRAN (R 3.5.0)                
+ yaml             2.1.19     2018-05-01 CRAN (R 3.5.0)                
 ```
