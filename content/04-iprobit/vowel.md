@@ -69,4 +69,11 @@ conf_mat <- function(mod) {
 conf_mat(mod.can)
 conf_mat(mod.fbm)
 conf_mat(mod.se)
+
+# Gaussian process classification using kernlab
+# mod.gpc1 <- gausspr(y ~ ., vowel.train, kernel = "vanilladot")  # DOES NOT WORK
+mod.gpc2 <- gausspr(y ~ ., vowel.train, kernel = "rbfdot")
+y.hat <- predict(mod.gpc2, vowel.test)
+RMSE.train <- sum(fitted(mod.gpc2) != vowel.train$y) / length(vowel.train$y) * 100
+RMSE.test <- sum(y.hat != vowel.test$y) / length(vowel.test$y) * 100
 ```

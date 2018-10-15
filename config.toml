@@ -23,23 +23,28 @@ url = "http://phd.haziqj.ml"
 weight = 10
 
 [[menu.shortcuts]]
+name = "My PhD thesis"
+url = "https://github.com/haziqj/phd-thesis/"
+weight = 11
+
+[[menu.shortcuts]]
 name = "My website"
 url = "https://haziqj.ml"
-weight = 11
+weight = 12
 
 [[menu.shortcuts]]
 name = "R/iprior"
 url = "https://github.com/haziqj/iprior"
-weight = 12
+weight = 13
 
 [[menu.shortcuts]]
 name = "R/iprobit"
 url = "https://github.com/haziqj/iprobit"
-weight = 12
+weight = 14
 
 [[menu.shortcuts]]
 name = "R/ipriorBVS"
 url = "https://github.com/haziqj/ipriorBVS"
-weight = 12
+weight = 15
 
 
